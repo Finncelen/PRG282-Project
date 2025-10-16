@@ -1,0 +1,10 @@
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\bin\Debug\HeroHQ.exe.config
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\bin\Debug\HeroHQ.exe
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\bin\Debug\HeroHQ.pdb
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.csproj.AssemblyReference.cache
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.HomeForm.resources
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.Properties.Resources.resources
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.csproj.GenerateResource.cache
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.csproj.CoreCompileInputs.cache
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.exe
+C:\Users\chani\OneDrive\Documents\BCom 2025\PRG 282\Project\PRG282 Hero HQ\HeroHQ\HeroHQ\obj\Debug\HeroHQ.pdb

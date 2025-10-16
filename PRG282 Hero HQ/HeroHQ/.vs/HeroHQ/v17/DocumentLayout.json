@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chani\\OneDrive\\Documents\\BCom 2025\\PRG 282\\Project\\PRG282-Project\\PRG282 Hero HQ\\HeroHQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F73C5EDE-D43E-4AE0-8576-7141922646F1}|HeroHQ\\HeroHQ.csproj|c:\\users\\chani\\onedrive\\documents\\bcom 2025\\prg 282\\project\\prg282-project\\prg282 hero hq\\herohq\\herohq\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F73C5EDE-D43E-4AE0-8576-7141922646F1}|HeroHQ\\HeroHQ.csproj|solutionrelative:herohq\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F73C5EDE-D43E-4AE0-8576-7141922646F1}|HeroHQ\\HeroHQ.csproj|C:\\Users\\chani\\OneDrive\\Documents\\BCom 2025\\PRG 282\\Project\\PRG282-Project\\PRG282 Hero HQ\\HeroHQ\\herohq\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F73C5EDE-D43E-4AE0-8576-7141922646F1}|HeroHQ\\HeroHQ.csproj|solutionrelative:herohq\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\chani\\OneDrive\\Documents\\BCom 2025\\PRG 282\\Project\\PRG282-Project\\PRG282 Hero HQ\\HeroHQ\\HeroHQ\\HomeForm.cs",
+              "RelativeDocumentMoniker": "HeroHQ\\HomeForm.cs",
+              "ToolTip": "C:\\Users\\chani\\OneDrive\\Documents\\BCom 2025\\PRG 282\\Project\\PRG282-Project\\PRG282 Hero HQ\\HeroHQ\\HeroHQ\\HomeForm.cs [Design]",
+              "RelativeToolTip": "HeroHQ\\HomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T13:35:01.998Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeForm.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\OneDrive\\Documents\\BCom 2025\\PRG 282\\Project\\PRG282-Project\\PRG282 Hero HQ\\HeroHQ\\HeroHQ\\HomeForm.cs",
+              "RelativeDocumentMoniker": "HeroHQ\\HomeForm.cs",
+              "ToolTip": "C:\\Users\\chani\\OneDrive\\Documents\\BCom 2025\\PRG 282\\Project\\PRG282-Project\\PRG282 Hero HQ\\HeroHQ\\HeroHQ\\HomeForm.cs",
+              "RelativeToolTip": "HeroHQ\\HomeForm.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T13:45:11.467Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
