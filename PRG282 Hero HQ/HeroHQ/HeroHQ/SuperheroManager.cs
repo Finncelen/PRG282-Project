@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace HeroHQ
 {
-    internal class SuperheroManager
+    internal class SuperHeroManager
     {
 
         //Main memory data store
@@ -30,6 +30,17 @@ namespace HeroHQ
             WriteToFile(SuperHeroFile, heroes);
         }
 
+        //Set Rank and Threat
+        private static void SetRankAndThreat(SuperHero hero)
+        {
+            // clamp just in case
+            int score = Math.Max(0, Math.Min(100, hero.ExamScore));
+
+            if (score >= 81) { hero.Rank = "S"; hero.ThreatLevel = "Finals Week"; }
+            else if (score >= 61) { hero.Rank = "A"; hero.ThreatLevel = "Midterm Madness"; }
+            else if (score >= 41) { hero.Rank = "B"; hero.ThreatLevel = "Group Project Gone Wrong"; }
+            else { hero.Rank = "C"; hero.ThreatLevel = "Pop Quiz"; }
+        }
 
         //Read data from superheroes.txt
         public static List<SuperHero> ReadFromFile(string filePath)
@@ -76,10 +87,14 @@ namespace HeroHQ
         {
             if (string.IsNullOrWhiteSpace(newHero.HeroName))
                 throw new Exception("Hero name cannot be empty.");
+            if (newHero.Age < 0)
+                throw new Exception("Age must be 0 or greater.");
             if (newHero.ExamScore < 0 || newHero.ExamScore > 100)
                 throw new Exception("Exam score must be between 0 and 100.");
 
             newHero.HeroID = heroes.Count > 0 ? heroes.Max(h => h.HeroID) + 1 : 1;
+            SetRankAndThreat(newHero);
+
             heroes.Add(newHero);
 
             //Immediately save the updated list to file
@@ -90,6 +105,8 @@ namespace HeroHQ
         public static void UpdateHero(List<SuperHero> heroes, SuperHero updatedHero)
         {
             var hero = heroes.FirstOrDefault(h => h.HeroID == updatedHero.HeroID);
+            SetRankAndThreat(updatedHero);
+
             if (hero != null)
             {
                 hero.HeroName = updatedHero.HeroName;
@@ -118,6 +135,40 @@ namespace HeroHQ
         public static List<SuperHero> GetAllHeroes()
         {
             return heroes;
+        }
+
+        //Summary Generation
+        public static void GenerateSummaryReport()
+        {
+            // Make sure any missing/old ranks are refreshed from score
+            foreach (var hero in heroes) 
+                if (string.IsNullOrWhiteSpace(hero.Rank) || string.IsNullOrWhiteSpace(hero.ThreatLevel))
+                    SetRankAndThreat(hero);
+
+            int total = heroes.Count;
+            double avgAge = heroes.Count == 0 ? 0 : heroes.Average(h => (double)h.Age);
+            double avgScore = heroes.Count == 0 ? 0 : heroes.Average(h => (double)h.ExamScore);
+
+            int countS = heroes.Count(hero=> hero.Rank == "S");
+            int countA = heroes.Count(hero => hero.Rank == "A");
+            int countB = heroes.Count(hero => hero.Rank == "B");
+            int countC = heroes.Count(hero => hero.Rank == "C");
+
+            string report =
+                $@"HERO HQ - Summary Report
+-------------------------
+Total heroes: {total}
+Average age: {avgAge:0.00}
+Average exam score: {avgScore:0.00}
+
+Heroes per rank:
+    S: {countS}
+    A: {countA}
+    B: {countB}
+    C: {countC}";
+
+            // Use the teammate’s method name to persist
+            WriteSummary(SummaryFile, report);
         }
 
         //Write summary.txt (from Member 3’s summary)

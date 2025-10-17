@@ -1,0 +1,40 @@
+1,Iron Sentinel,22,81,S,Finals Week
+2,Shadow Viper,24,83,S,Finals Week
+3,Crimson Falcon,26,85,S,Finals Week
+4,Aqua Surge,28,87,S,Finals Week
+5,Lunar Wraith,30,88,S,Finals Week
+6,Volt Striker,32,90,S,Finals Week
+7,Titan Blaze,34,92,S,Finals Week
+8,Phantom Mirage,36,94,S,Finals Week
+9,Frost Specter,38,96,S,Finals Week
+10,Solar Knight,40,98,S,Finals Week
+11,Nebula Storm,22,61,A,Midterm Madness
+12,Quantum Archer,24,62,A,Midterm Madness
+13,Echo Pulse,26,65,A,Midterm Madness
+14,Blaze Runner,28,66,A,Midterm Madness
+15,Silver Bolt,30,68,A,Midterm Madness
+16,Terra Forge,32,70,A,Midterm Madness
+17,Cyber Phantom,34,72,A,Midterm Madness
+18,Mystic Shroud,36,75,A,Midterm Madness
+19,Storm Reaper,38,77,A,Midterm Madness
+20,Nova Nova,40,45,B,Group Project Gone Wrong
+21,Spectral Shade,22,41,B,Group Project Gone Wrong
+22,Arc Vector,24,42,B,Group Project Gone Wrong
+23,Zenith Aegis,26,45,B,Group Project Gone Wrong
+24,Aurora Ray,28,46,B,Group Project Gone Wrong
+25,Vortex Cyclone,30,48,B,Group Project Gone Wrong
+26,Ember Ember,32,50,B,Group Project Gone Wrong
+27,Glacier Frost,34,52,B,Group Project Gone Wrong
+28,Atlas Titan,36,55,B,Group Project Gone Wrong
+29,Orion Orion,38,57,B,Group Project Gone Wrong
+30,Rogue Rogue,40,60,B,Group Project Gone Wrong
+31,Sable Shade,22,0,C,Pop Quiz
+32,Cinder Cinder,24,5,C,Pop Quiz
+33,Static Spark,26,10,C,Pop Quiz
+34,Phoenix Phoenix,28,15,C,Pop Quiz
+35,Rune Rune,30,20,C,Pop Quiz
+36,Rift Rift,32,25,C,Pop Quiz
+37,Falcon Hawk,34,30,C,Pop Quiz
+38,Sentinel Guardian,36,35,C,Pop Quiz
+39,Warden Warden,38,38,C,Pop Quiz
+40,Mirage Mirage,40,40,C,Pop Quiz

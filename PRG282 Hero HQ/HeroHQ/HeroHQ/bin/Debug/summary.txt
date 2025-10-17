@@ -1,0 +1,11 @@
+HERO HQ - Summary Report
+-------------------------
+Total heroes: 40
+Average age: 31,00
+Average exam score: 56,73
+
+Heroes per rank:
+    S: 10
+    A: 9
+    B: 11
+    C: 10

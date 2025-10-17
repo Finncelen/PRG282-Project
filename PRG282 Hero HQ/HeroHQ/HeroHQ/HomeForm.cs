@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,24 +13,36 @@ namespace HeroHQ
 {
     public partial class HomeForm : Form
     {
+        private const string SummaryFile = "summary.txt";
         public HomeForm()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void HomeForm_Load(object sender, EventArgs e)
         {
-
+            SuperHeroManager.LoadData();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnGenerateSum_Click(object sender, EventArgs e)
         {
-
+            SuperHeroManager.GenerateSummaryReport();
+            ShowSummaryOnForm();
+            MessageBox.Show("Summary generated to summary.txt");
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void ShowSummaryOnForm()
         {
-
+            try
+            {
+                txtSummary.Text = File.ReadAllText(SummaryFile);
+                txtSummary.Visible = true;     // reveal the box the first time
+            }
+            catch (Exception ex)
+            {
+                txtSummary.Visible = true;
+                txtSummary.Text = $"Could not read summary:\r\n{ex.Message}";
+            }
         }
     }
 }

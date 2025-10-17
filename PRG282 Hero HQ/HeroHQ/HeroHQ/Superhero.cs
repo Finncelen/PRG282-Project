@@ -29,7 +29,7 @@ namespace HeroHQ
         // Convert to file format
         public string ToFileString()
         {
-            return $"{HeroID}|{HeroName}|{Age}|{ExamScore}|{Rank}|{ThreatLevel}";
+            return $"{HeroID},{HeroName},{Age},{ExamScore},{Rank},{ThreatLevel}";
         }
     }
 }
