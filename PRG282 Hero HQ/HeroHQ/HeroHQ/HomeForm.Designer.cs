@@ -101,6 +101,7 @@
             this.btnManage.TabIndex = 5;
             this.btnManage.Text = "View/ Manage Heros";
             this.btnManage.UseVisualStyleBackColor = false;
+            this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
             // 
             // btnExit
             // 
@@ -113,6 +114,7 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnGenerateSum
             // 

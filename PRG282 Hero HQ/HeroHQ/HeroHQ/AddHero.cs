@@ -30,7 +30,7 @@ namespace HeroHQ
             try
             {
                 var name = txtName.Text.Trim();
-                var spwr = txtSuperpower.Text.Trim(); // not persisted in current model
+                var spwr = txtSuperpower.Text.Trim(); 
 
                 if (string.IsNullOrWhiteSpace(name))
                     throw new Exception("Please enter a name.");
@@ -45,7 +45,7 @@ namespace HeroHQ
                 var newHero = new SuperHero(
                     id: 0,
                     name: txtName.Text.Trim(),
-                    superpower: txtSuperpower.Text.Trim(),   // NEW
+                    superpower: txtSuperpower.Text.Trim(),
                     age: int.Parse(txtAge.Text.Trim()),
                     examScore: int.Parse(txtScore.Text.Trim()),
                     rank: "",
@@ -53,7 +53,7 @@ namespace HeroHQ
                 );
 
                 // Add to in-memory list and save to file
-                SuperHeroManager.AddHero(SuperHeroManager.GetAllHeroes(), newHero); // assigns ID & saves:contentReference[oaicite:2]{index=2}
+                SuperHeroManager.AddHero(SuperHeroManager.GetAllHeroes(), newHero); // assigns ID & saves
 
                 // Show the auto-assigned ID back to the user
                 txtHeroID.Text = newHero.HeroID.ToString();

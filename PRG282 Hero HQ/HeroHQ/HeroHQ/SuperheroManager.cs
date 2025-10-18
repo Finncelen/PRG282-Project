@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace HeroHQ
@@ -45,7 +46,7 @@ namespace HeroHQ
         //Read data from superheroes.txt
         public static List<SuperHero> ReadFromFile(string filePath)
         {
-            List<SuperHero> heroes = new List<SuperHero>();
+            List<SuperHero> hero = new List<SuperHero>();
 
             if (File.Exists(filePath))
             {
@@ -60,14 +61,14 @@ namespace HeroHQ
                             && int.TryParse(parts[2], out var age)
                             && int.TryParse(parts[4], out var exam))
                         {
-                            heroes.Add(new SuperHero(id, parts[1], age, parts[3] ,exam, parts[5], parts[6]));
+                            hero.Add(new SuperHero(id, parts[1], age, parts[3] ,exam, parts[5], parts[6]));
                         }
                     }
 
                 }
             }
 
-            return heroes;
+            return hero;
         }
 
         //Write data to superheroes.txt
@@ -168,11 +169,11 @@ Heroes per rank:
     B: {countB}
     C: {countC}";
 
-            // Use the teammate’s method name to persist
+            // Use method persist
             WriteSummary(SummaryFile, report);
         }
 
-        //Write summary.txt (from Member 3’s summary)
+        //Write summary.txt
         public static void WriteSummary(string filePath, string summaryReport)
         {
             using (StreamWriter writer = new StreamWriter(filePath))
