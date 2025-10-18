@@ -55,12 +55,12 @@ namespace HeroHQ
                     while ((line = reader.ReadLine()) != null)
                     {
                         string[] parts = line.Split(',');
-                        if (parts.Length == 6
+                        if (parts.Length == 7
                             && int.TryParse(parts[0], out var id)
                             && int.TryParse(parts[2], out var age)
-                            && int.TryParse(parts[3], out var exam))
+                            && int.TryParse(parts[4], out var exam))
                         {
-                            heroes.Add(new SuperHero(id, parts[1], age, exam, parts[4], parts[5]));
+                            heroes.Add(new SuperHero(id, parts[1], age, parts[3] ,exam, parts[5], parts[6]));
                         }
                     }
 
@@ -77,7 +77,7 @@ namespace HeroHQ
             {
                 foreach (var hero in heroes)
                 {
-                    writer.WriteLine($"{hero.HeroID},{hero.HeroName},{hero.Age},{hero.ExamScore},{hero.Rank},{hero.ThreatLevel}");
+                    writer.WriteLine($"{hero.HeroID},{hero.HeroName},{hero.Age},{hero.Superpower},{hero.ExamScore},{hero.Rank},{hero.ThreatLevel}");
                 }
             }
         }
@@ -111,6 +111,7 @@ namespace HeroHQ
             {
                 hero.HeroName = updatedHero.HeroName;
                 hero.Age = updatedHero.Age;
+                hero.Superpower = updatedHero.Superpower;
                 hero.ExamScore = updatedHero.ExamScore;
                 hero.Rank = updatedHero.Rank;
                 hero.ThreatLevel = updatedHero.ThreatLevel;

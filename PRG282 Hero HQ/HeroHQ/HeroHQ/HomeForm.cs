@@ -44,5 +44,15 @@ namespace HeroHQ
                 txtSummary.Text = $"Could not read summary:\r\n{ex.Message}";
             }
         }
+
+        private void btnAddHero_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            using (var dlg = new AddHero())
+            {
+                dlg.ShowDialog(this);
+            }
+            this.Show();
+        }
     }
 }

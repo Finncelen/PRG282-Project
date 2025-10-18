@@ -12,15 +12,17 @@ namespace HeroHQ
         public int HeroID { get; set; }
         public string HeroName { get; set; }
         public int Age { get; set; }
+        public string Superpower { get; set; }
         public int ExamScore { get; set; }
         public string Rank { get; set; } 
         public string ThreatLevel { get; set; } 
 
-        public SuperHero(int id, string name, int age, int examScore, string rank, string threatlevel)
+        public SuperHero(int id, string name, int age, string superpower, int examScore, string rank, string threatlevel)
         {
             HeroID = id; 
             HeroName = name;
             Age = age;
+            Superpower = superpower;
             ExamScore = examScore;
             Rank = rank;
             ThreatLevel = threatlevel;
@@ -29,7 +31,7 @@ namespace HeroHQ
         // Convert to file format
         public string ToFileString()
         {
-            return $"{HeroID},{HeroName},{Age},{ExamScore},{Rank},{ThreatLevel}";
+            return $"{HeroID},{HeroName},{Age},{Superpower},{ExamScore},{Rank},{ThreatLevel}";
         }
     }
 }
